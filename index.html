@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Rush Candy Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #ffb3b3;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #333; /* Changed color for better contrast */
+        }
+
+        .navbar {
+            background-color: #ffc9c9;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a, .button {
+            text-decoration: none;
+            color: #fff; /* Changed color for better contrast */
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f08080; /* Adjusted background color for better contrast */
+        }
+
+        .button:hover {
+            background-color: #ffb3b3; /* Adjusted hover color for better contrast */
+        }
+
+        .main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .candy-box {
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+
+        .candy-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .candy-box h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333; /* Changed color for better contrast */
+        }
+
+        .candy-box p {
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #ffb3b3;
+            padding: 10px;
+            text-align: center;
+            color: #333; /* Changed color for better contrast */
+        }
+
+        /* Responsive styles for smaller screens */
+        /* Responsive styles for smaller screens */
+        @media screen and (max-width: 768px) {
+            .candy-box {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Sugar Rush Candy Shop</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <button class="button">Shop Now!</button>
+    </nav>
+
+    <main class="main">
+        <div class="candy-box">
+            <img src="images/gummy-bears.jpg" alt="Gummy Bears">
+            <h3>Gummy Bears</h3>
+            <p>Chewy, fruity, and fun! Our gummy bears come in a variety of delicious flavors.</p>
+            <button class="button">Add to Cart</button>
+        </div>
+
+        <div class="candy-box">
+            <img src="images/chocolate-bars.jpg" alt="Chocolate Bars">
+            <h3>Chocolate Bars</h3>
+            <p>We have a wide selection of chocolate bars to satisfy your sweet tooth.</p>
+            <button class="button">Add to Cart</button>
+        </div>
+
+        <div class="candy-box">
+            <img src="images/lollipops.jpg" alt="Lollipops">
+            <h3>Lollipops</h3>
+            <p>Sweet and colorful, our lollipops are perfect for any occasion.</p>
+            <button class="button">Add to Cart</button>
+        </div>
+
+        <div class="candy-box">
+            <img src="images/sour-belts.jpg" alt="Sour Belts">
+            <h3>Sour Belts</h3>
+            <p>Pucker up! Our sour belts are a fun and tangy treat.</p>
+            <button class="button">Add to Cart</button>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        &copy; <?php echo date("Y"); ?> Sugar Rush Candy Shop. All rights reserved.
+    </footer>
+
+</html>
